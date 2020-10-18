@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Centro Sagrado Corazón, Logroño</string>
+    <string name="duques_de_najera_18_26002_logrono">Duques de Nájera 18, 26002, Logroño</string>
+    <string name="logo_of_jesuitas">Logo de Jesuitas</string>
+    <string name="photo_of_jesuitas">Foto de Jesuitas</string>
+    <string name="location">Ubicación</string>
+    <string name="email">Correo electrónico</string>
+    <string name="phone">Número de teléfono</string>
+    <string name="Like">Me gusta</string>
+</resources>

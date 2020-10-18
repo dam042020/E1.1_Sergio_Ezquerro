@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">E1.1_Sergio_Ezquerro</string>
+    <string name="title">Centro Sagrado Corazon, Logrono</string>
+    <string name="duques_de_najera_18_26002_logrono">Duques de Najera 18, 26002, Logrono</string>
+    <string name="logo_of_jesuitas">Logo of Jesuitas</string>
+    <string name="photo_of_jesuitas">Photo of Jesuitas</string>
+    <string name="location">Location</string>
+    <string name="email">Email</string>
+    <string name="csc_jesuitasrioja_org" translatable="false">csc@jesuitasrioja.org</string>
+    <string name="phone">Phone</string>
+    <string name="_941_22_17_00" translatable="false">941 22 17 00</string>
+    <string name="Like">I like it</string>
+</resources>

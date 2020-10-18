@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--JesuitasLogo-->
+    <ImageView
+        android:id="@+id/imageView_JesuitasLogo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jesuitas_logo"
+        android:contentDescription="@string/logo_of_jesuitas" />
+
+    <!--JesuitasPhoto-->
+    <ImageView
+        android:id="@+id/imageView_JesuitasPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_JesuitasLogo"
+        app:srcCompat="@drawable/jesuitasrioja"
+        android:contentDescription="@string/photo_of_jesuitas" />
+
+    <!--Title  Centro Sagrado Corazón, Logroño-->
+    <TextView
+        android:id="@+id/textView_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_JesuitasPhoto" />
+
+    <!--Guideline-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <!--Location-->
+    <ImageView
+        android:id="@+id/imageView_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Title"
+        app:srcCompat="@drawable/location"
+        android:contentDescription="@string/location" />
+
+    <TextView
+        android:id="@+id/textView_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/duques_de_najera_18_26002_logrono"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_Location"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Location"
+        app:layout_constraintTop_toTopOf="@+id/imageView_Location" />
+
+    <!--Email-->
+    <ImageView
+        android:id="@+id/imageView_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_Location"
+        app:srcCompat="@drawable/email"
+        android:contentDescription="@string/email" />
+
+    <TextView
+        android:id="@+id/textView_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/csc_jesuitasrioja_org"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_Email"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Email"
+        app:layout_constraintTop_toTopOf="@+id/imageView_Email" />
+
+    <!--Phone-->
+    <ImageView
+        android:id="@+id/imageView_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_Email"
+        app:srcCompat="@drawable/phone"
+        android:contentDescription="@string/phone" />
+
+    <TextView
+        android:id="@+id/textView_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/_941_22_17_00"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_Phone"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Phone"
+        app:layout_constraintTop_toTopOf="@+id/imageView_Phone" />
+
+    <!--Like-->
+    <ImageView
+        android:id="@+id/imageView_Like"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="likeButtonOnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/megusta"
+        android:contentDescription="Like button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
